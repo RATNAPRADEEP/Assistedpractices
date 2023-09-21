@@ -1,3 +1,7 @@
++===================================================+
+|  1. Set Up and Create a Git Repository:           |                           
++================================================== +
+
 become a root user:
 
 # sudo su -
@@ -8,7 +12,7 @@ Create a working directory[folder]
 
 Go inside the directory
 
-# cd myproject
+# cd myprprproject
 
 create empty files
 
@@ -18,41 +22,17 @@ Create a local repo
 
 # git init
 
-===================================================
+now setup configuration
 
 git configurations:
 
-git config --global user.name sonal
+git config --global user.name prpr
 
 
-git config --global user.email sonal@gmail.com
-
-
-Configurations are of 3 types:
-================================
-
-Config Variables: user.name and user.email
-
-Local: The configuration when set with flag a local, the config variable will be application only to that particulr repository
-
-Global : The configuration when set with flag as global, the config variable will be application to every repository created by current user logged in the machine
-
-System : The configuration when set with flag as system, the config variable will be application to every repository created by every user logged in the machine
-
-
-Assignment:
-=====================
-
-Remove the configurations:
-
-==========================
-git config --global --unset user.name
-
-git config --global --unset user.email
+git config --global user.email prpr@gmail.com
 
 
 Find out the file/location where the git configuration are saved:
-================================
 
 local:
 
@@ -61,27 +41,23 @@ global: cat ~/.gitconfig
 system: 
 
 
-========================================
+
+
+
+
+
+
+
++===================================================+
+|  2. CRUD Operations in Git:                       |                           
++================================================== +
+
 Adding a file to Local repo
-=====================================
 
 # git status
 
 # git add .
 
-OR
-
-# git add -a  // add all the files
-
-# git status
-
-# git commit -m "added file file1 and file2"
-
-==============================================
-
-Take an existing file which is tracked by GIT and do some modifications.
-Commit the changes to git
-====================================================
 
 Make changes in the file--> add some content in the file
 
@@ -103,29 +79,14 @@ Now check git status:
 
 # git status
 
-======================================================
+
 
 To check the commit history on a git repository
-==================================================
 
 # git log
 
 # git log --oneline
 
-Assignment:
-===================
-
-1. How can i find log of git commits from one date to another date
-
---since=<date>, --after=<date>
-           Show commits more recent than a specific date.
-
- --until=<date>, --before=<date>
-           Show commits older than a specific date.
-
-2. Move/copy/push your git log history in a new text file
-
-===============================================
 
 Take an exisitng file from local repo and 
 
@@ -135,8 +96,6 @@ Delete it from Local repo and working directory
 # git ls-files
 
 Choose a filename to be deleted
-
-Execute the git delete command to delete a file from Local Repo and Working directory
 
 # git rm <filename>
 
@@ -291,34 +250,10 @@ Step 4: Check the status now and commit .gitignore file
 
 ======================================================
 
-Remote repository:
-=======================================================
 
-Creation of github account:
-===================================================
-
-Step2: Connect the SL lab to the github account so that we can push the data from local repo to remote repo
-
-
-On the lab terminal:
-====================================
-Execute the command to generate SSH keys
-
-
-
-Password less authentication between git(lab) and github servers --> SSH method
-
-2 servers have to communicate we also have an authentication method of SSH
-
-SSH command will generate public key and priavte key
-
-copy public key on github account and save it
-
-after this you can communicate with github from your lab terminal with any username or password
-
-
-Execution:
-============================
++===================================================+
+|  3. Creation of github account:                   |                           
++================================================== +
 
 Step 1: generate SSH keys:
 
@@ -462,62 +397,8 @@ Rebase Command: merging strategy
 
 # git rebase master
 
-==============================================
-
-Lesson end project
-=============================================
-
-Come out of current directory:
-
-# cd
-
-Create a directory with includes  the files:
-
-# mkdir 
 
 
 
-=================================
 
-Introduction to JAVA programming
-===================================
 
-learn only that much of java that will help to become an expert in Selenium
-
-Java -> Object oriented programming lanaguage
-Everything in java is an Object
-Java is platform independent language
-Java -> compile and interpret the code
-Convert it into machine understandable code (binary file -> .class file)
-Execute it to show output
-Java files are stored with extension .java
-3 steps:
-Write the program
-Compile it
-Run the program
-Java is a secured language
-================================
-For writing any kind of code, We use various editor (java based) 
-These editors help us in writing the code, syntax check, execution of the code
-Eclipse or intellij -> java and maven and selenium
-pycharm or atom editor
-VSCode
-
-In the Eclipse editor, we will find java libraries, that will help us write the code
-We will create Java code ==> java code is written in a java class
-================================
-		
-Always create a java project first
-		
-A project can have multiple packages		
-The name of a package should begin with lower case		
-A package can have multiple classes		
-Name of a Class should begin with uppercase		
-classname with same package should be unique		
-
-======================
-
-Create a Project in Eclipse	"File-->New-->go to Project or Other --> select project --> sleect java folder--> select java project
-Give the Project name
-Click on Finish button
-Java project will be created in eclipse"
