@@ -113,10 +113,8 @@ Commit the deletion of file:
 
 # git log --oneline
 
-==================================================
 
 Revert command
-============================================
 
 1. File --> present in the LR and WD (old state1)
 
@@ -127,20 +125,6 @@ we got a commit id --> commit2
 you want the file back
 
 git revert commit2
-
-Revert command will always work on a commit id
-
-Whatever happened in the commit will go back to its original state.
-
-
-When you execute the revert command, you are bringing back some chnages to the LR
-
-this command is doing changes to LR, so a new commit has to be created for your REVERT command/action
-
-In this cases, git will automatically create a commit, asking you to enter a message
-
-Git will open a new open a file, where you have to enter the message and save the file
-
 
 
 Execution:
@@ -172,32 +156,10 @@ git ls-files
 
 ls
 
-=================================================
+
 
 .gitignore
 =========================================
-
-In a working directory we will have files which can be shread with others like out source code file, scripts
-
-But we can also have extra files in our workign directory like : .txt files, .xml files, .log file, .class files, test data files
-
-These extra files we dont want them to be version controlled, then we can ask git to ignore them
-
-This concept of ignoreing the files by git is applicable only to new files
-
-Files with status as UNTRACKED.
-
-This concept is performed by creating a file with name as .gitignore
-
-File name will ramin same, its a hidden file, it has no extension
-
-In this file we will write names of the files that we want to ignore
-As you will save the file. git will not be bothered about the files that you are ignoring
-Git will not prompt your for adding them to LR
-
-Ignored files  Files will be present in the Working directory
-
-
 
 Step 1: Create some files that we will ignore
 
@@ -248,7 +210,7 @@ Step 4: Check the status now and commit .gitignore file
 # git commit -m "done .gitignore"
 
 
-======================================================
+
 
 
 +===================================================+
